@@ -1,0 +1,13 @@
+{
+  "ticket_id": "TKT-66808FFD",
+  "status": "resolved",
+  "created_at": "2026-04-05T21:00:03.956264Z",
+  "customer_name": "Unknown",
+  "customer_email": "unknown@example.com",
+  "issue_summary": "2FA login issue",
+  "issue_description": "lost phone with 2FA enabled and cant log in",
+  "category": "account",
+  "priority": "medium",
+  "suggested_solution": "",
+  "agent_notes": ""
+}

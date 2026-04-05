@@ -1,0 +1,13 @@
+{
+  "ticket_id": "TKT-A7C633F6",
+  "status": "open",
+  "created_at": "2026-04-05T21:16:53.390397Z",
+  "customer_name": "Abdo",
+  "customer_email": "abdo@test.com",
+  "issue_summary": "Blank screen",
+  "issue_description": "The app shows a blank screen after trying cache clearing and incognito mode.",
+  "category": "mobile",
+  "priority": "medium",
+  "suggested_solution": "",
+  "agent_notes": ""
+}

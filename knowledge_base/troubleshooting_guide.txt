@@ -1,0 +1,108 @@
+TECHSUPPORT PRO - TROUBLESHOOTING GUIDE
+========================================
+
+## ERROR CODES REFERENCE
+
+ERROR 401 - Unauthorized:
+Cause: Your session has expired or your credentials are invalid.
+Solution: Log out completely and log back in. If using API access, regenerate your API key. Ensure your account subscription is active.
+
+ERROR 403 - Forbidden:
+Cause: You do not have permission to access this resource.
+Solution: Contact your account administrator to verify your role and permissions. This is not a bug - it is an access control restriction.
+
+ERROR 404 - Not Found:
+Cause: The resource or page you are looking for does not exist.
+Solution: Check the URL for typos. The resource may have been deleted or moved. Return to the dashboard and navigate from there.
+
+ERROR 429 - Rate Limit Exceeded:
+Cause: You have made too many API requests in a short period.
+Solution: Implement exponential backoff in your API calls. Standard accounts are limited to 1000 requests/hour. Enterprise accounts get 10,000 requests/hour.
+
+ERROR 500 - Internal Server Error:
+Cause: An unexpected error occurred on our servers.
+Solution: Wait 5 minutes and try again. Check the status page at status.techsupportpro.com. If the error persists for more than 30 minutes, contact support with the error timestamp and your account ID.
+
+ERROR 503 - Service Unavailable:
+Cause: The service is temporarily down for maintenance or experiencing high load.
+Solution: Check status.techsupportpro.com for maintenance windows. We perform scheduled maintenance on Sundays between 2:00-4:00 AM UTC.
+
+## INSTALLATION TROUBLESHOOTING
+
+Windows Installation Issues:
+- Run installer as Administrator (right-click > Run as Administrator)
+- Disable antivirus temporarily during installation
+- Ensure .NET Framework 4.7.2 or higher is installed
+- Clear temp files: Run > %temp% and delete all files
+- Minimum requirements: Windows 10, 8GB RAM, 2GB disk space
+
+Mac Installation Issues:
+- Go to System Preferences > Security & Privacy > Allow apps from identified developers
+- If getting "damaged app" error, run: xattr -cr /Applications/TechSupportPro.app in Terminal
+- Minimum requirements: macOS 11 Big Sur or later, 8GB RAM, 2GB disk space
+
+Linux Installation Issues:
+- Supported distributions: Ubuntu 20.04+, Fedora 34+, Debian 11+
+- Install dependencies: sudo apt-get install libssl-dev libffi-dev python3-dev
+- If AppImage does not run: chmod +x TechSupportPro.AppImage then ./TechSupportPro.AppImage
+
+## COMMON WORKFLOW ISSUES
+
+Issue: Cannot save changes / Save button grayed out
+Solutions:
+1. Check if you have edit permissions for this item
+2. Ensure all required fields are filled in
+3. Look for validation errors highlighted in red
+4. Try refreshing the page (your work may be auto-saved as a draft)
+
+Issue: Emails not being received from the system
+Solutions:
+1. Check spam/junk folder
+2. Add noreply@techsupportpro.com to your contacts
+3. Ask IT to whitelist our mail servers: 54.192.0.0/14
+4. Verify your email address in Settings > Profile > Email
+
+Issue: Charts and dashboards not loading
+Solutions:
+1. Ensure JavaScript is enabled in your browser
+2. Disable browser extensions temporarily (especially ad blockers)
+3. Check if your browser is up to date (Chrome 90+, Firefox 88+, Safari 14+)
+4. Corporate firewalls may block WebSocket connections - contact IT
+
+Issue: Bulk import failing
+Solutions:
+1. Check that CSV file uses UTF-8 encoding (not UTF-16 or Latin-1)
+2. Ensure the first row contains exact column headers as per the template
+3. Maximum 10,000 rows per import file
+4. Date format must be YYYY-MM-DD
+5. Download the import template from Settings > Data > Import Template
+
+## ACCOUNT RECOVERY
+
+Locked Out of Account:
+1. Click "Forgot Password" on login page
+2. Check email (including spam) for reset link
+3. If email is no longer accessible, use your backup recovery code
+4. If recovery code is lost, submit identity verification at support.techsupportpro.com/verify
+5. Identity verification requires government ID and takes 2-3 business days
+
+Account Compromised:
+1. Immediately contact security@techsupportpro.com
+2. We will lock your account within 1 hour
+3. Review recent login history in Settings > Security > Login History
+4. Once secured, enable 2FA to prevent future unauthorized access
+
+## ESCALATION PATHS
+
+Level 1 Support (Chat/Email):
+- Response time: 2-4 hours
+- Handles: General questions, how-to queries, billing inquiries
+
+Level 2 Support (Phone/Screen share):
+- Response time: Same business day
+- Handles: Technical bugs, integration issues, data problems
+
+Level 3 Support (Dedicated engineer):
+- Enterprise customers only
+- Response time: 2 hours (SLA)
+- Handles: Critical outages, custom development, complex migrations

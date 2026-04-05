@@ -1,0 +1,72 @@
+TECHSUPPORT PRO - PRODUCT FAQ & KNOWLEDGE BASE
+===============================================
+
+## ACCOUNT & BILLING
+
+Q: How do I reset my password?
+A: To reset your password, go to the login page and click "Forgot Password". Enter your registered email address and you will receive a reset link within 5 minutes. The link expires in 24 hours. If you don't receive the email, check your spam folder or contact support.
+
+Q: How do I cancel my subscription?
+A: You can cancel your subscription at any time from Settings > Billing > Cancel Subscription. Your access will continue until the end of the current billing period. No refunds are issued for partial months. After cancellation, your data is retained for 30 days.
+
+Q: Why was I charged twice?
+A: Double charges can occur due to payment processing delays. Please allow 3-5 business days for duplicate charges to be reversed automatically. If the charge persists after 5 days, contact billing support with your transaction ID and we will issue a refund.
+
+Q: How do I update my payment method?
+A: Navigate to Settings > Billing > Payment Methods. Click "Add New Method" and enter your card details. You can set the new card as your default payment method by clicking the star icon next to it.
+
+Q: What payment methods do you accept?
+A: We accept Visa, MasterCard, American Express, Discover, and PayPal. We do not currently accept cryptocurrency or bank transfers for individual accounts.
+
+## TECHNICAL ISSUES
+
+Q: The application is not loading / showing a blank screen.
+A: First, clear your browser cache and cookies (Ctrl+Shift+Delete). Then try opening the app in an incognito/private window. If the issue persists, try a different browser. Check our status page at status.techsupportpro.com for any ongoing outages.
+
+Q: I am getting a "Connection Timeout" error.
+A: Connection timeouts are usually caused by network issues. Check your internet connection, disable VPN if active, and ensure your firewall is not blocking the application. Try connecting from a different network to isolate the issue.
+
+Q: How do I fix the "Session Expired" error?
+A: Session expiration is a security feature. Simply log out and log back in. If sessions expire too quickly, go to Settings > Security > Session Duration and increase the timeout value.
+
+Q: The app crashes on startup after the latest update.
+A: Some updates require clearing the local cache. On Windows: delete %AppData%\TechSupportPro\cache. On Mac: delete ~/Library/Application Support/TechSupportPro/cache. Then restart the application.
+
+Q: How do I enable two-factor authentication (2FA)?
+A: Go to Settings > Security > Two-Factor Authentication. Click "Enable 2FA" and choose between SMS or authenticator app. We recommend using an authenticator app (Google Authenticator, Authy) for better security.
+
+## DATA & INTEGRATIONS
+
+Q: How do I export my data?
+A: Navigate to Settings > Data Management > Export. Select the data types you want to export (CSV, JSON, or PDF formats available). Large exports may take up to 2 hours and will be emailed to you when ready.
+
+Q: Can I integrate with Salesforce?
+A: Yes, we offer native Salesforce integration. Go to Settings > Integrations > Salesforce and follow the OAuth setup wizard. You need Salesforce admin permissions to complete this integration.
+
+Q: How do I connect to Slack notifications?
+A: Go to Settings > Integrations > Slack. Click "Add to Slack" and authorize the app in your Slack workspace. You can configure notification rules in the Slack integration settings.
+
+Q: My API key stopped working.
+A: API keys expire every 90 days for security. Go to Settings > Developer > API Keys to regenerate your key. Update all applications using the old key immediately. Old keys are invalidated within 24 hours of regeneration.
+
+## PERFORMANCE & USAGE
+
+Q: How do I speed up slow report generation?
+A: Slow reports are usually caused by large date ranges or too many data points. Try narrowing the date range, applying filters before running the report, or scheduling reports to run overnight during off-peak hours.
+
+Q: What is the maximum file upload size?
+A: The maximum file upload size is 100MB for standard plans and 1GB for enterprise plans. For larger files, use our FTP integration or contact enterprise support for bulk data import assistance.
+
+Q: How many users can I add to my account?
+A: Standard plans include up to 10 users. Professional plans include up to 50 users. Enterprise plans have unlimited users. To add more users beyond your plan limit, upgrade your subscription in Settings > Billing.
+
+## MOBILE APP
+
+Q: The mobile app is not syncing with the desktop version.
+A: Ensure both devices are connected to the internet and logged into the same account. Pull down to refresh in the mobile app. If sync issues persist, log out and log back in. Background app refresh must be enabled in phone settings.
+
+Q: How do I enable offline mode?
+A: Offline mode is available on Professional and Enterprise plans. Go to Mobile App Settings > Offline Mode and enable it. Pre-select the data you want available offline. Offline data syncs automatically when you reconnect.
+
+Q: Push notifications are not working.
+A: Go to your phone's Settings > Notifications > TechSupportPro and ensure notifications are allowed. Inside the app, go to Settings > Notifications and verify your notification preferences. On iOS, also check that Do Not Disturb mode is not active.

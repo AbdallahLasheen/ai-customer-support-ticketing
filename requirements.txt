@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────
+#  Intelligent Customer Support & Ticketing System
+#  Python dependencies
+# ─────────────────────────────────────────────────
+
+# LangChain core
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-anthropic>=0.1.15
+langchain-groq>=0.2.0
+
+# LLM APIs
+anthropic>=0.28.0
+groq>=0.4.0
+
+# Vector store & embeddings
+faiss-cpu>=1.7.4
+sentence-transformers>=2.7.0
+
+# Document loaders
+unstructured>=0.14.0
+pypdf>=4.2.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.7.0
+
+# UI
+streamlit>=1.40.0
